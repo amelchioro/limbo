@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E8205D4-98AE-4DF5-8773-EB19CC9B3835}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Ambients" ID="{9E8205D4-98AE-4DF5-8773-EB19CC9B3835}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="3"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Sound Name="amb_boygetUp" ID="{35853C59-FD47-42C1-A260-5103FD61D9D6}" ShortID="539438903">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_boy" ID="{0F3EACAF-FDFE-4616-891D-909BC7EE0748}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="boygetUp" ID="{A1569D0E-FBA5-48AC-BB71-ECCB9605CC88}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.76292575955859"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="12.7678562586213"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.64106391256676"/>
+								<Property Name="TrimEnd" Type="Real64" Value="17.4689916174442"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>boygetUp.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="234531461"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="boygetUp" ID="{A1569D0E-FBA5-48AC-BB71-ECCB9605CC88}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<ActorMixer Name="menu" ID="{9E58EEB7-104D-4E28-8BEE-E7A411D4C23C}" ShortID="607078719">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="menu_rain" ID="{4E1CB08F-D1DB-42A6-8D06-DCF93274541E}" ShortID="974829359">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="thunderMenu" ID="{930D2FC6-0637-401F-B135-FCDD938BC123}" ShortID="195673528">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{45FAEF95-5A5F-4080-953C-BBD477A6944E}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{607A5B91-40DA-4A05-A9F3-BB1CF3FEE608}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{956E0101-1D11-4529-A76C-6FB5535D0B8D}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457" ID="{778FCB0B-DB33-41AC-9D53-BF2EFFE9CBB5}" ShortID="1060525642">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457" ID="{C3787EAB-B4B9-4EA7-8A81-0C4619FE3BF0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.14452858090951"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.39917444309788"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.23744021237304"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.58499770602494"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313543915"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457" ID="{C3787EAB-B4B9-4EA7-8A81-0C4619FE3BF0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 07 SND65454" ID="{5E7736EE-C092-43ED-8001-5B0657CB661D}" ShortID="929691950">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 07 SND65454" ID="{47DC8F87-F17E-46BC-B58F-7255B50E8B37}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.101276431209603"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.64595152354571"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.07616683979686"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.786358956602"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 07 SND65454.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="757918329"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 07 SND65454" ID="{47DC8F87-F17E-46BC-B58F-7255B50E8B37}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 11 SND65450 1" ID="{1804B0AB-9EC9-4D2E-A3F0-C68306893A19}" ShortID="194414671">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 11 SND65450 1" ID="{0C169B2B-36DA-4C5A-A3B3-53F597A3D712}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.38641864323638"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.74410576812096"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.32635588354109"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.39417295706371"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 11 SND65450 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="698090408"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 11 SND65450 1" ID="{0C169B2B-36DA-4C5A-A3B3-53F597A3D712}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Cracking Thunder 05 SND65439" ID="{50D1AEEC-3C66-4B81-A1AA-A2CD07D149CD}" ShortID="175861981">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Cracking Thunder 05 SND65439" ID="{759DBC6A-11E1-4CAA-94EC-3567FC08DB85}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.225556555863343"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.21418092105263"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.620280528624192"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.6611761311173"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Cracking Thunder 05 SND65439.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="47603022"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Cracking Thunder 05 SND65439" ID="{759DBC6A-11E1-4CAA-94EC-3567FC08DB85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Rolling Thunder 07 SND65425" ID="{921DF94F-4E11-4983-8FF4-5AC32FD5EB20}" ShortID="885065480">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Rolling Thunder 07 SND65425" ID="{0C97D774-A6A2-406A-9C26-011F50D9B940}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.564487534626038"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.18268513388735"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.9134256694367"/>
+														<Property Name="TrimEnd" Type="Real64" Value="20.848406278855"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Rolling Thunder 07 SND65425.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84546719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Rolling Thunder 07 SND65425" ID="{0C97D774-A6A2-406A-9C26-011F50D9B940}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457_01" ID="{7B20736F-7CF3-452A-ABDD-E3390668B51D}" ShortID="455049782">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457" ID="{FC5B3AA0-E809-4DE1-8DB7-9D3D348644F6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.289057161819022"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.06951149873038"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.39435775911821"/>
+														<Property Name="TrimEnd" Type="Real64" Value="18.297318343144"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="111451712"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weather, Thunder, Tropical, Distant Thunder, Booming Thunder 04 SND65457" ID="{FC5B3AA0-E809-4DE1-8DB7-9D3D348644F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F413DB7D-16FD-438C-BBA6-DF3E5F82C579}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="thunderMenu_Path" ID="{55C056A6-FF3E-4A30-BA82-973D855BDDE6}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="2"/>
+														<Property Name="RandomY" Type="Real64" Value="4"/>
+														<Property Name="RandomZ" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-57.86802</XPos>
+															<YPos>20.62147</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-43.65482</XPos>
+															<YPos>47.45763</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-30.96447</XPos>
+															<YPos>52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>39.54802</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_01" ID="{BB708CEF-1441-4F63-A7F5-42ED5FDE33AE}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="5"/>
+														<Property Name="RandomY" Type="Real64" Value="3"/>
+														<Property Name="RandomZ" Type="Real64" Value="4"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>10.6599</XPos>
+															<YPos>42.0904</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>21.3197969543147</XPos>
+															<YPos>23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>16.243654822335</XPos>
+															<YPos>-9.60451977401129</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_02" ID="{F8A16F37-DA8B-47F0-9282-BE1B51A643AA}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="1"/>
+														<Property Name="RandomY" Type="Real64" Value="4"/>
+														<Property Name="RandomZ" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-4.56853</XPos>
+															<YPos>-11.58192</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-1.5228426395939</XPos>
+															<YPos>-23.1638418079096</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>7.10659898477158</XPos>
+															<YPos>-29.9435028248588</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>28.4263959390863</XPos>
+															<YPos>-42.9378531073446</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_03" ID="{0CBD5BCC-A8C8-4D5A-9D48-2AF7257C1E48}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="7"/>
+														<Property Name="RandomZ" Type="Real64" Value="2"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-11.67513</XPos>
+															<YPos>32.48588</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-11.6751269035533</XPos>
+															<YPos>12.4293785310735</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>1.5228426395939</XPos>
+															<YPos>8.47457627118644</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>10.1522842639594</XPos>
+															<YPos>-9.60451977401129</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_04" ID="{8E8B732E-65C9-4647-B5E0-A5477CB4DAFE}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="4"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+														<Property Name="RandomZ" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-14.2132</XPos>
+															<YPos>41.52542</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-9.64467005076142</XPos>
+															<YPos>15.2542372881356</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-16.751269035533</XPos>
+															<YPos>-5.64971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-18.2741116751269</XPos>
+															<YPos>-28.8135593220339</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_05" ID="{73952CAF-96C8-47AF-AE7F-6869358CD6BC}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="8"/>
+														<Property Name="RandomY" Type="Real64" Value="3"/>
+														<Property Name="RandomZ" Type="Real64" Value="6"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>19.79695</XPos>
+															<YPos>18.92655</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-8.47457627118644</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>13.7055837563452</XPos>
+															<YPos>-26.5536723163842</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>7.61421319796955</XPos>
+															<YPos>-44.0677966101695</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="thunderMenu_Path_06" ID="{5CF8DE33-43AB-4D04-9DE8-63B8A3036295}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="5"/>
+														<Property Name="RandomY" Type="Real64" Value="4"/>
+														<Property Name="RandomZ" Type="Real64" Value="6"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-12.69036</XPos>
+															<YPos>22.88136</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-19.2893401015228</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>-10.6598984771574</XPos>
+															<YPos>-11.2994350282486</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-25.42373</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="fliesBranch" ID="{BF3CB733-7631-498F-8C86-E1DA1649B869}" ShortID="899954449">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Movement, Insect, Bee Hive, Very Active 02 SND73964" ID="{86F37604-D9A3-454E-8A5F-AE43B6FE86AF}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2386.173"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.33234952100646"/>
+												<Property Name="LoopBegin" Type="Real64" Value="7.53528306786703"/>
+												<Property Name="LoopEnd" Type="Real64" Value="119.488060076177"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.358823003231764"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Movement, Insect, Bee Hive, Very Active 02 SND73964.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="964305589"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{E4975C6F-F701-4538-B4C4-A5F841D82C66}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="27.7580071174377"/>
+												<Property Name="PanY" Type="Real64" Value="43.2950191570881"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="movie" ID="{AF646CA1-CEAF-4905-8955-046F70D14AC9}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="off" ID="{F9D1C0FC-82AA-40DF-81FD-D91BF67B647A}"/>
+												<CustomState Name="" ID="{F3943C1A-A359-4E21-9B65-79A831B75D74}" ShortID="798022965"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="on" ID="{B01E80FF-C6AC-470B-8BDA-FBBC9FF648FE}"/>
+												<CustomState Name="" ID="{F58B1B1B-CCD7-4D42-B6E7-3A10D8B47B93}" ShortID="1051030238">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Movement, Insect, Bee Hive, Very Active 02 SND73964" ID="{86F37604-D9A3-454E-8A5F-AE43B6FE86AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_rain" ID="{232F8075-23DC-42A9-8D8F-2E149398DBD2}" ShortID="229812345">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rain, Vegetation, Forest, Rain On Ground, Village, Australia, Northern Territory 02 (5 chan) SND47201 2" ID="{1B108FE5-B28E-4E85-8BB0-409F02A410D7}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="914.623"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.714119695353248"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.714119695353248"/>
+												<Property Name="LoopEnd" Type="Real64" Value="37.6286147166904"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Rain, Vegetation, Forest, Rain On Ground, Village, Australia, Northern Territory 02 (5 chan) SND47201 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="805093812"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rain, Vegetation, Forest, Rain On Ground, Village, Australia, Northern Territory 02 (5 chan) SND47201 2" ID="{1B108FE5-B28E-4E85-8BB0-409F02A410D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu_music" ID="{CAF44116-0DBC-4521-8A6E-D6583747DCCC}" ShortID="956628700">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ggg" ID="{4047676E-7DB1-4F7C-B07D-EA34F0FDC60F}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="189.225312291163"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.236531640363954"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.283837968436745"/>
+												<Property Name="LoopEnd" Type="Real64" Value="36.8043232406313"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.189225312291163"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ggg.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="728027626"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ggg" ID="{4047676E-7DB1-4F7C-B07D-EA34F0FDC60F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="movie" ID="{AF646CA1-CEAF-4905-8955-046F70D14AC9}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="off" ID="{F9D1C0FC-82AA-40DF-81FD-D91BF67B647A}"/>
+										<CustomState Name="" ID="{D27DCC7E-7032-4169-95C7-9C5B20B90C89}" ShortID="379520696"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="on" ID="{B01E80FF-C6AC-470B-8BDA-FBBC9FF648FE}"/>
+										<CustomState Name="" ID="{050009E0-A930-4E2F-9B03-03AEA158222A}" ShortID="779107948">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</BlendContainer>
+						<BlendContainer Name="menuintrostatic" ID="{B8ACCF68-ADC0-48E1-9A8F-3712D0D4D728}" ShortID="21823362">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menuintro2_static" ID="{307968EA-05DC-47CB-8FDE-4D109508272E}" ShortID="441969879">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menuintro2_static" ID="{5F5EF1C8-9693-4322-955D-068E6F4D3439}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="171.534"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.21619589129184"/>
+												<Property Name="LoopEnd" Type="Real64" Value="7.0714072776706"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>menuintro2_static.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="120327511"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="menuintro2_static" ID="{5F5EF1C8-9693-4322-955D-068E6F4D3439}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="amb_Treeclimb" ID="{5026ED50-E1E9-418E-B23B-E14F4224CD5F}" ShortID="80366572">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="amb_treeclimb_lake" ID="{73CB9703-44B0-45F0-BFDC-7E29A3EEC72A}" ShortID="190922783">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="12-20" ID="{3CB3D674-A743-4D94-A7B6-BE55968A4346}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lake" ID="{D2EB52B8-D4FE-4ABF-B1AF-DCFCE4292DF4}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="50.776"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.145770009468989"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.781857323515487"/>
+										<Property Name="LoopEnd" Type="Real64" Value="9.60756880591064"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.106014552341083"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>lake.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1042453634"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="lake" ID="{D2EB52B8-D4FE-4ABF-B1AF-DCFCE4292DF4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="fliesBranch" ID="{7A86FECF-DD06-4775-B725-4582344CB4C9}" ShortID="472218874">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Movement, Insect, Bee Hive, Very Active 02 SND73964" ID="{B0C66DB9-EB1B-401B-9404-FD15EC3A4AA1}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2386.173"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="5.02352204524469"/>
+										<Property Name="LoopBegin" Type="Real64" Value="7.53528306786703"/>
+										<Property Name="LoopEnd" Type="Real64" Value="119.488060076177"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Movement, Insect, Bee Hive, Very Active 02 SND73964.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="607934103"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Movement, Insect, Bee Hive, Very Active 02 SND73964" ID="{B0C66DB9-EB1B-401B-9404-FD15EC3A4AA1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="amb_spider" ID="{401FA8D7-DFAF-4A67-8907-0EEC7149B6AB}" ShortID="374120426">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="AMB_STATES" ID="{C8965140-E9DA-48A7-A608-48F6D079BEF6}" ShortID="450674200">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="amb" ID="{34982180-27FA-42F1-9EEB-E1183CA11887}" ShortID="1065152728">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{A41C5023-3BC7-4768-B2A8-763E2F5BBEFA}" WorkUnitID="{52274FCC-FF38-4EDD-81BF-EC82E4A946E4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="AMBIENCE" ID="{A3134037-49B3-4E4D-A31C-14C0B0BD0C64}" WorkUnitID="{52274FCC-FF38-4EDD-81BF-EC82E4A946E4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="amb_sws_start" ID="{CBF74974-956C-407E-A8CB-5E1932D69B4D}" ShortID="770828243">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{601F4DB1-E0E3-44A3-AA4D-4ECE36CC24C3}" WorkUnitID="{52274FCC-FF38-4EDD-81BF-EC82E4A946E4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="amb_sws_start" ID="{6D8AEA02-9454-405E-8FC8-2A768A2A15CC}" WorkUnitID="{52274FCC-FF38-4EDD-81BF-EC82E4A946E4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="amb_start_eyesopen" ID="{19414CA5-2ABE-4229-8976-A75560995AD7}" ShortID="726544282">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="amb_main_forest_updated" ID="{ED4EE848-FA57-4827-A747-476DD6B2E820}" ShortID="119243615">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="amb_main_forest_updated" ID="{7383A20B-AD83-41EC-A961-A6275EBA89DF}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="657.549"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.692156330676315"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.84575021513684"/>
+																<Property Name="LoopEnd" Type="Real64" Value="81.7898064082512"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>amb_main_forest_updated.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="623235613"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="amb_main_forest_updated" ID="{7383A20B-AD83-41EC-A961-A6275EBA89DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="amb_start_cave" ID="{EF94BF9D-3399-41D2-AEF3-DB67D9826F96}" ShortID="864317450">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="main_cave" ID="{3A514205-7B8E-4B43-9EA2-F451D770695F}" ShortID="75195324">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="main_cave" ID="{EE31DE04-D01A-4C78-BAE5-63C641D6D2AC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.97802197802198"/>
+																<Property Name="LoopBegin" Type="Real64" Value="2.96703296703297"/>
+																<Property Name="LoopEnd" Type="Real64" Value="116.538461538462"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Ambience, Underground, Cave, Deep, Wind 02 SND46578 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="951279424"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="main_cave" ID="{EE31DE04-D01A-4C78-BAE5-63C641D6D2AC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="amb_start_enterwood" ID="{A48E7C0F-7186-4EFE-B9C0-7116E9E270EC}" ShortID="399481546">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enterwood_parrots" ID="{1423E816-C5D9-4843-B80D-CCFF8C630038}" ShortID="644067202">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5F95A1F7-BC70-41AF-8787-5E58C29D4320}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="parrot_enterwood" ID="{F7120802-8672-450E-A4D3-1B1927D30300}" ShortID="826006327">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{73CC93A2-BEF1-4D0F-B177-7591F0D50F40}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0285320363338822"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.65623683567929"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.392438256752788"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="3.52206560061301"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="237720849"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{73CC93A2-BEF1-4D0F-B177-7591F0D50F40}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_01" ID="{D7E0B838-3856-4597-9CCD-06F483FDFDC0}" ShortID="886887799">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{72EE874D-420D-45A7-97A8-5B8568D14DD2}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.108611761430736"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.501285052757241"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="4.24297918940117"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="7.51124378109454"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="335503460"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{72EE874D-420D-45A7-97A8-5B8568D14DD2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_02" ID="{23A5EBCB-6953-46AA-BF19-D241C9F1A66B}" ShortID="706434113">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{AAC2F4D2-7B14-467E-826B-EF85A9DF3C5D}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.177611409869534"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.547635180431065"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="8.27769722814499"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="12.3654489457475"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="882156766"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{AAC2F4D2-7B14-467E-826B-EF85A9DF3C5D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_03" ID="{39B73B9D-0CEA-4B5C-8291-9FEFF7424672}" ShortID="594373996">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{AF18E698-05AF-4EE1-8F1F-9B97D25F76B0}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.121098688547409"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.538216393544047"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="12.4381754807092"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="17.0663634209903"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="212509138"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{AF18E698-05AF-4EE1-8F1F-9B97D25F76B0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_04" ID="{D185598F-CC7B-41D0-8B17-2875DAE4300F}" ShortID="590983706">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{63B06C75-8663-42BA-9D2C-596DB5F8E604}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0403662295158043"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.430573114835234"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="18.6181752106986"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="21.9716654821132"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="966925204"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{63B06C75-8663-42BA-9D2C-596DB5F8E604}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_05" ID="{A2021D7A-291A-4A83-82AD-500E9E31A190}" ShortID="133221283">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{0AB398D4-A308-4FAA-924D-9608DBCD5235}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.122321907623643"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.189042948145641"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="23.8622506515044"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="27.2860222213139"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="664211760"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{0AB398D4-A308-4FAA-924D-9608DBCD5235}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_06" ID="{9E22E6F2-3077-4B40-8179-D217ECEEEF0D}" ShortID="647660552">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{CB1FCD13-F052-4EBA-B937-40039AED634A}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0607618245766375"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.288618666739019"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="27.2311899905234"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="30.9136223643687"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="706508035"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{CB1FCD13-F052-4EBA-B937-40039AED634A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_07" ID="{D26900B7-CBBA-4996-8E12-C06AD2277D2F}" ShortID="560035891">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{4DAC78B5-68D1-4D74-A2B5-7EAFFA3873A7}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0835475087928756"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.40254708782021"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="31.1691068467188"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="35.1698172598524"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="530395856"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{4DAC78B5-68D1-4D74-A2B5-7EAFFA3873A7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="parrot_enterwood_08" ID="{3A2A9792-E172-4838-A620-B7F0788292AD}" ShortID="335589544">
+															<PropertyList>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="parrot_enterwood" ID="{58F78A4B-A060-4148-BE5C-F842F8D7D961}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0683570526487074"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.455713684324763"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="35.667703436116"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="39.4979009713338"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>parrot_enterwood.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="317070102"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="parrot_enterwood" ID="{58F78A4B-A060-4148-BE5C-F842F8D7D961}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="amb_start_enterwood" ID="{A48E7C0F-7186-4EFE-B9C0-7116E9E270EC}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="amb_start_cave" ID="{EF94BF9D-3399-41D2-AEF3-DB67D9826F96}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="amb_start_eyesopen" ID="{19414CA5-2ABE-4229-8976-A75560995AD7}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="amb_sws_start_falling_eyesopen" ID="{759C7122-8F3C-48F3-BCBC-806E2DD588A3}"/>
+												<ItemList>
+													<ItemRef Name="amb_start_eyesopen" ID="{19414CA5-2ABE-4229-8976-A75560995AD7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="amb_sws_start_falling_enterwood" ID="{E985674A-8006-48A0-8D69-346E8208C206}"/>
+												<ItemList>
+													<ItemRef Name="amb_start_enterwood" ID="{A48E7C0F-7186-4EFE-B9C0-7116E9E270EC}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="amb_sws_start_falling_cave" ID="{A20CE8F3-AC03-4B0C-8E50-31980AB0DD2F}"/>
+												<ItemList>
+													<ItemRef Name="amb_start_cave" ID="{EF94BF9D-3399-41D2-AEF3-DB67D9826F96}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="amb_sws_start" ID="{CBF74974-956C-407E-A8CB-5E1932D69B4D}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="amb_sws_start" ID="{334AC6BC-F805-4C36-B28C-05039F66B047}"/>
+										<ItemList>
+											<ItemRef Name="amb_sws_start" ID="{CBF74974-956C-407E-A8CB-5E1932D69B4D}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

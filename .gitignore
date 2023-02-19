@@ -1,0 +1,19 @@
+*.prof
+*.akd
+*.asd
+*.validationcache
+GeneratedSoundBanks
+.cache/
+*.cache
+.backup
+*.crossover.wsettings
+*.wsettings
+.DS_Store
+.vs
+
+#largefiles Originals/SFX/Rain, Vegetation, Forest, Rain On Ground, Village, Australia, Northern Territory 02 (5 chan) SND47201 1.wav
+limbo_remake/
+LIMBO/
+limbo_sisperafinale/
+Originals/SFX/Ambience, Designed, Horror Ambience, Scary, Distant Screams SND50552.wav
+Originals/SFX/Ambience, Forest, Trees Creaking, Wind, Strong, Tierra Del Fuego Argentina SND80225.wav

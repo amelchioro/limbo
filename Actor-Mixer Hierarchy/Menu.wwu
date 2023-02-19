@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{95806556-6E80-4C01-8ACC-F7C014476F7A}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Menu" ID="{95806556-6E80-4C01-8ACC-F7C014476F7A}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Sound Name="manuNavigateMenuBack" ID="{C74DCA03-FCEC-4CA1-9DCD-4BB6CA594E30}" ShortID="618176156">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="manuNavigateMenuBack" ID="{3C7E3936-65D3-4B2B-BE30-EBD4F23EDFB3}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0140725858564497"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.042217757569349"/>
+								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>manuNavigateMenuBack.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="139943446"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="manuNavigateMenuBack" ID="{3C7E3936-65D3-4B2B-BE30-EBD4F23EDFB3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuNavigateEnterGame" ID="{EAA9D0AA-5722-47D8-9AC8-F62C4A24F068}" ShortID="996461041">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="menuNavigateEnterGame" ID="{B2F6EFB8-35D9-4E90-83B3-74ADBDF1F904}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="4.26548145798332"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="TrimEnd" Type="Real64" Value="5.57889950223037"/>
+								<Property Name="VolumeOffset" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>menuNavigateEnterGame.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="851151207"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="menuNavigateEnterGame" ID="{B2F6EFB8-35D9-4E90-83B3-74ADBDF1F904}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuNavigateScroll" ID="{974676D2-449D-4BBB-882B-1F57BAD33895}" ShortID="261774834">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="menuNavigateScroll" ID="{8AFE7EFA-1E19-4AD9-BE9E-72836506502F}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.00401991078526978"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0291443531932059"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>menuNavigateScroll.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="528218544"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="menuNavigateScroll" ID="{8AFE7EFA-1E19-4AD9-BE9E-72836506502F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuPauseStart" ID="{660827DB-2FD6-4460-B481-A9255F9E7EED}" ShortID="231611621">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="menuPauseStart" ID="{5673399D-79C1-47DD-BF9C-0CC1834E4E11}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.197913753872303"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.512155682903504"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0254460540692961"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.836892444945738"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>menuPauseStart.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1005491927"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="menuPauseStart" ID="{5673399D-79C1-47DD-BF9C-0CC1834E4E11}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuNavigateModifiedSettings" ID="{F1A58942-079C-4DFE-92F7-0CD0A2CA7A10}" ShortID="521067923">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-280</Value>
+							</ValueList>
+						</Property>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Games, Video, Menu UI, Notification 06 SND83200" ID="{D861AE88-9945-4F4B-A36D-34DB70F50B6B}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.00110319516407599"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.00132383419689119"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.00529533678756477"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0522914507772021"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Games, Video, Menu UI, Notification 06 SND83200.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1015841693"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Games, Video, Menu UI, Notification 06 SND83200" ID="{D861AE88-9945-4F4B-A36D-34DB70F50B6B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuNavigateMenuChange" ID="{958F709D-0461-40DC-8369-4A350344EFAD}" ShortID="729155391">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="menuNavigateMenuChange" ID="{C4062625-B768-4E41-BEF8-ACA74C8BA252}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.150106329232902"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.5479715202143"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>menuNavigateMenuChange.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="358130848"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="menuNavigateMenuChange" ID="{C4062625-B768-4E41-BEF8-ACA74C8BA252}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="menuIntro" ID="{D738FAAF-A104-4455-8DE7-4B0AD197A7C7}" ShortID="143842586">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="menuIntro" ID="{85F889ED-B149-430A-B8F2-4A3CFFD42CF8}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.192411598608562"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="3.87783375657256"/>
+								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.192411598608562"/>
+								<Property Name="TrimEnd" Type="Real64" Value="6.157171155474"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>menuIntro.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="535001610"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="menuIntro" ID="{85F889ED-B149-430A-B8F2-4A3CFFD42CF8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

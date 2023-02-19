@@ -1,0 +1,3389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6DACAD2D-A27D-4669-8672-6FB5ADCC7A1E}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Spider" ID="{6DACAD2D-A27D-4669-8672-6FB5ADCC7A1E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="7"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="env" ID="{BD8A8719-6B9E-4541-B928-5C0B5370240F}" ShortID="34692423">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="stonesFalling" ID="{BE1DD30F-83DB-4094-9C96-53EE3C371CBD}" ShortID="251987937">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rocks, Crash &amp; Debris, Stones And Dirt Falling On Ground SND75262 2" ID="{CB54360A-6EC1-4CBD-A278-5E4C0A2E9ECF}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="6.10719413919415"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.08770695970697"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Rocks, Crash &amp; Debris, Stones And Dirt Falling On Ground SND75262 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="283304403"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rocks, Crash &amp; Debris, Stones And Dirt Falling On Ground SND75262 2" ID="{CB54360A-6EC1-4CBD-A278-5E4C0A2E9ECF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderStrikes" ID="{DA4D567A-5B73-4AA7-A8BF-3B585E32D830}" ShortID="947826300">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="spiderStrike" ID="{40BB21E7-CE77-4533-A7D0-FBABD31C1308}" ShortID="144033736">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="spiderStrike" ID="{BF21058E-A4D6-47C4-A861-907328564328}" ShortID="928883256">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>380</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7152FBE5-F94B-45EB-8EB0-132D4E9AA274}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{C8EDA1FC-66A3-4421-83F4-AA7673FD006E}" ShortID="963070486">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{30ACCFC0-0933-4F94-A07B-F0E336285E5D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.171567765567766"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.296344322344322"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.545897435897436"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.62989377289377"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="845362489"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{30ACCFC0-0933-4F94-A07B-F0E336285E5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235_01" ID="{A728B0E0-1940-42C1-A349-5492FD834246}" ShortID="735816276">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{B701BDA4-6F94-4EE0-8EC5-68D07E76EEFC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.179366300366301"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.272948717948718"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.47213553113553"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.59512454212454"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="434880870"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{B701BDA4-6F94-4EE0-8EC5-68D07E76EEFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235_02" ID="{8C872F76-2C1C-419D-A2EC-337B72457874}" ShortID="424975728">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{2EFD5449-7DF9-43D9-8BAF-ED5B6258D11E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.288545787545788"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.389926739926739"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.21900732600732"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="278533223"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{2EFD5449-7DF9-43D9-8BAF-ED5B6258D11E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="spiderStrikeHigh" ID="{D88EF89D-C7C0-4E9F-8EB5-2F802D761B23}" ShortID="527289665">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0DDDB85F-1363-403C-9A88-60F10D367239}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{2EB893F0-F4FD-4770-9716-CD1558A970AE}" ShortID="229605881">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{7D45C043-5649-41C2-9C64-5C0207EB99D8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0981052631578947"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.40791135734072"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0722880886426593"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.4147811634349"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="616764627"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{7D45C043-5649-41C2-9C64-5C0207EB99D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1_01" ID="{39F50F56-27C8-41B5-9BE7-863CCFDA1601}" ShortID="264335415">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{26A19623-FC8D-4EA0-83D1-D3BA9A21A125}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0413074792243768"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.278825484764543"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.58517451523546"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.77276454293629"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1005085036"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{26A19623-FC8D-4EA0-83D1-D3BA9A21A125}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1_02" ID="{3C7454AB-8125-486F-B174-9E11D400BC7B}" ShortID="159752248">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{47307764-1210-4B35-9C12-5C0CF7475F32}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113595567867036"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.154903047091413"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.85537950138504"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="956940843"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Organic, Wind, Classic, Fast SND55344 1" ID="{47307764-1210-4B35-9C12-5C0CF7475F32}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="spiderCounterStrikeImpact" ID="{F0132B20-7872-44CF-B8A4-4119CCB64001}" ShortID="858054151">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>22</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Designed, Stinger, Horror, Impact, Dark Rumble 02 SND20356 2" ID="{BCE79FDE-674D-4746-8E62-19A4C3A73D1B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.094434795673077"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.13321754807692"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Designed, Stinger, Horror, Impact, Dark Rumble 02 SND20356 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="663582836"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Designed, Stinger, Horror, Impact, Dark Rumble 02 SND20356 2" ID="{BCE79FDE-674D-4746-8E62-19A4C3A73D1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderHitGround" ID="{04881435-0EDD-46B0-85E5-C48A36F713A3}" ShortID="459442255">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="spiderHitGroundLayers" ID="{80F4E3A1-01E0-4921-B0CA-F7C2D358B85D}" ShortID="130272403">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6F64D165-D7F9-4AA3-8936-FD4AB5C39A3F}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="spiderStrikesLayers" ID="{98CC0CF8-6D46-432C-A09C-0664E0378C10}" ShortID="728501796">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="firstStrikeLowLayer" ID="{68CEA926-058E-4A28-BE05-3C2A2C7D85B4}" ShortID="551111263">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed, Rumble, Trailer Sub, Whoosh 03 SND36023" ID="{F37914F0-5D56-43B9-A3C1-B334570F5818}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.174395604395604"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.88347252747253"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Designed, Rumble, Trailer Sub, Whoosh 03 SND36023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="631596939"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed, Rumble, Trailer Sub, Whoosh 03 SND36023" ID="{F37914F0-5D56-43B9-A3C1-B334570F5818}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Designed, Rumble, Trailer Sub, Whoosh 02 SND36024" ID="{C91D0206-3077-432A-9FFB-BBF3ACC17A30}" ShortID="631846612">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed, Rumble, Trailer Sub, Whoosh 02 SND36024" ID="{F78E2E2B-4058-4306-A65E-AE3C990FC136}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0997802197802198"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.823186813186813"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.73783882783883"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.89534798534799"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Designed, Rumble, Trailer Sub, Whoosh 02 SND36024.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="45037040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed, Rumble, Trailer Sub, Whoosh 02 SND36024" ID="{F78E2E2B-4058-4306-A65E-AE3C990FC136}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Designed, Boom, Low Kick, Impact, Textured Top SND57395" ID="{50865E52-F320-410B-9909-4941874EAB75}" ShortID="129923649">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed, Boom, Low Kick, Impact, Textured Top SND57395" ID="{D84EF1B7-E5A3-4C24-9827-965C209B2596}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.02678943452381"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.4217084478022"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Designed, Boom, Low Kick, Impact, Textured Top SND57395.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="113107980"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed, Boom, Low Kick, Impact, Textured Top SND57395" ID="{D84EF1B7-E5A3-4C24-9827-965C209B2596}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="firstStrikeLowLayer_01" ID="{6F8430E3-63E0-45E8-A621-AE8EAB85B4BB}" ShortID="544682077">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Designed, Rumble, Trailer Sub, Whoosh 01 SND36025" ID="{81375316-0D51-40F7-9545-9379A73986F3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0613626373626375"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.74116483516483"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.67213186813187"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Designed, Rumble, Trailer Sub, Whoosh 01 SND36025.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="805334078"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Designed, Rumble, Trailer Sub, Whoosh 01 SND36025" ID="{81375316-0D51-40F7-9545-9379A73986F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="dirtMoving" ID="{EB31B7A8-D69C-4600-A0C0-42EF53EC1B04}" ShortID="609370241">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{62D9F966-C80F-4046-BE75-D0A85F2A1BC8}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{C8F9DA35-D4B5-4CA0-84F6-7053A41C8B73}" ShortID="719107714">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{92180269-A30B-48D0-8664-1ED9A9B7A54E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.120895618577994"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.503731744074975"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.186380745307741"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.38000640882211"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="872304388"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{92180269-A30B-48D0-8664-1ED9A9B7A54E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504_01" ID="{4AC0B829-9A87-4751-922A-7C6A272B769D}" ShortID="819791547">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{5B1BE013-3800-4B91-97B4-DAFC8615383E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.206142439333263"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.893283903777472"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.93248772321429"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.46161833000795"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="566543429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{5B1BE013-3800-4B91-97B4-DAFC8615383E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504_02" ID="{0A0B17FD-B3E0-409A-AE3E-0439621BF1D5}" ShortID="343587869">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{12A9AF59-415D-4874-8AFF-D25C6FB206FF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0590010917200132"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.81864014761519"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.51169532720793"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.0220300427901"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="506442175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{12A9AF59-415D-4874-8AFF-D25C6FB206FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504_03" ID="{89791BC0-D906-4919-B53A-A0E5B769FA70}" ShortID="141327178">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{C02DFFCA-139D-4029-9EA1-2301CF10A708}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.066376228185014"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.96495894079376"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.8319829616472"/>
+														<Property Name="TrimEnd" Type="Real64" Value="16.2681292715227"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="761389868"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{C02DFFCA-139D-4029-9EA1-2301CF10A708}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504_04" ID="{B487A02A-68DD-4F93-849F-15F23514F72A}" ShortID="448419662">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{7E62647E-C42E-4802-B1B0-50883167E4AC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.168042410714285"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.812204985119048"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.84197916666667"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.63443154761905"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1033443264"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Movement, Stones, Soil, Dust, Clay, Rolling Down, Low End 03 SND51504" ID="{7E62647E-C42E-4802-B1B0-50883167E4AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="spiderHitGroundOrganic" ID="{4993E30D-B7A6-4B34-804C-8F133DD2E3B2}" ShortID="104933188">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BF4982F6-13D2-4066-9ED8-33DD21F8525C}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{FA3EFEEA-2DC3-4230-BC6F-873946908B14}" ShortID="680867092">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{DCD05EB0-68ED-4719-99DA-ED3590438F80}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0123526560684883"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0633073623510029"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.379855752138983"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.02108212615036"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1027296570"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{DCD05EB0-68ED-4719-99DA-ED3590438F80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918_01" ID="{AAAB829E-4FF9-4883-86D0-A6D8712E7E35}" ShortID="1051889204">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{2D7B7A8D-F40B-440F-A812-9A45CB931D08}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0295189874074384"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.405124653739612"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.73842787820581"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.05401662049862"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="345003415"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{2D7B7A8D-F40B-440F-A812-9A45CB931D08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918_02" ID="{1C6B9499-E43F-4A58-90B6-581A69D2F278}" ShortID="438274844">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{9895A3E2-E631-4D0A-995F-38631D0C86FB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.029318244289497"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0671425069214067"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.31106726992583"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.23771346952909"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="661107526"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{9895A3E2-E631-4D0A-995F-38631D0C86FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918_03" ID="{86337946-6E59-485E-89CA-99065F204057}" ShortID="502876300">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{EAE28971-54AA-45D7-B327-DF309C3B683A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0462629615888828"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.210721949006329"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.2958636811475"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.28695230503797"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="240936701"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Impact, Punch, Fat, Crunchy x5 04 SND44918" ID="{EAE28971-54AA-45D7-B327-DF309C3B683A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="spiderHitBoyThread" ID="{452BD514-654A-4348-BD32-CE898E454067}" ShortID="1030605265">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-430</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{AA432B70-0E05-492E-BAC7-714D42AC805C}" ShortID="983992335">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{D6F579C1-3611-4BA4-A70A-067C0DC0892D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0193691135734072"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.122671052631579"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0903891966759003"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.71020083102493"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Swish, Sword Swing, Airy 01 SND59353.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898213722"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{D6F579C1-3611-4BA4-A70A-067C0DC0892D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353_01" ID="{7BD47A63-F5EF-4A47-81AF-ABD83F305DF3}" ShortID="645899841">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{491CC96E-CA02-4498-BC71-EDB6C332E58A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0516509695290859"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.154952908587258"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.12340858725762"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.6980256232687"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Swish, Sword Swing, Airy 01 SND59353.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1009238946"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{491CC96E-CA02-4498-BC71-EDB6C332E58A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353_02" ID="{3AE1EEC1-A3EA-46A4-8B49-33D42248F737}" ShortID="386681490">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{7C895D17-8ECD-4BD9-A729-99AB707503B3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0322818559556786"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.458402354570637"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.13705886426593"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.89891066481994"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Swish, Sword Swing, Airy 01 SND59353.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="838284761"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Swish, Sword Swing, Airy 01 SND59353" ID="{7C895D17-8ECD-4BD9-A729-99AB707503B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="moreDustMoving" ID="{B32CE29C-B7B0-466D-BE7E-81201B5479C3}" ShortID="888238965">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D22F7DD6-1BEF-4F20-9A98-A0127233EB00}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="12-20" ID="{3CB3D674-A743-4D94-A7B6-BE55968A4346}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="moreDust" ID="{8B132F79-912A-45C7-A9AF-EF7E4E9145C0}" ShortID="826321073">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Falling, Light, Dust, Settlingy SND42666 3" ID="{3452A18F-E0CE-4241-9787-E7F90FDD1FD4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.369230769230769"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.646153846153847"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.520879120879121"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.42417582417582"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Dust, Settling, Falling, Light, Dust, Settlingy SND42666 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541413654"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Falling, Light, Dust, Settlingy SND42666 3" ID="{3452A18F-E0CE-4241-9787-E7F90FDD1FD4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="moreDustSpider" ID="{CF195082-E80D-41BA-B924-032E03F36E41}" ShortID="423091027">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{3C060C5E-EE4E-4ADC-818A-55EA96B7D8E8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.389595695970696"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.47636263736264"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.656161172161172"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.49534981684982"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="735878045"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{3C060C5E-EE4E-4ADC-818A-55EA96B7D8E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="moreDustSpider_01" ID="{9AB9F8EB-B296-4FBE-A742-5CC72D47D2B1}" ShortID="336933728">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{4B1806E8-2DF3-4435-8475-BBF0D8830884}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.512625915750916"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.676666208791209"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.60736858974359"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.9496895604396"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059162679"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{4B1806E8-2DF3-4435-8475-BBF0D8830884}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="moreDustSpider_02" ID="{F42C1AD0-6026-4523-B380-507A80639A51}" ShortID="838103029">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{5CF41DBE-931E-442A-B3A1-A912BC10E2A8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.55363598901099"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.348585622710623"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.0979716117216"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="447506745"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dirt &amp; Sand, Dust, Settling, Rolling, Tumbling, Dusty SND42659" ID="{5CF41DBE-931E-442A-B3A1-A912BC10E2A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="spiderReleaseBoy" ID="{D142C041-FFE8-4C02-9734-115F52A4388F}" ShortID="614175659">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Gore" ID="{1897F080-C4F0-48C7-B48E-096562B01B49}" ShortID="443348328">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>3.1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gore" ID="{93655939-0E20-44BC-AC7E-30D50FA0225F}" ShortID="312382129">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gore, Flesh, Tearing, Wet, Bones 05 SND9831" ID="{E4E88D34-EB8A-4892-BEBB-51AA933F5DBC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00909602325046041"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.513266290478872"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0509377302025783"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.24272225091827"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gore, Flesh, Tearing, Wet, Bones 05 SND9831.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684191005"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gore, Flesh, Tearing, Wet, Bones 05 SND9831" ID="{E4E88D34-EB8A-4892-BEBB-51AA933F5DBC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Gore, Flesh, Tearing, Wet, Bones 04 SND9832" ID="{6540D77C-A242-4C9C-B361-E4D55CC7A846}" ShortID="310158987">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>48</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gore, Flesh, Tearing, Wet, Bones 04 SND9832" ID="{EEF7EF2C-3ECF-4CEC-83F3-82DFD3CD7F6E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0517033983655617"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.632626220810884"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.167590325736648"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1681225464876"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gore, Flesh, Tearing, Wet, Bones 04 SND9832.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="13008791"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gore, Flesh, Tearing, Wet, Bones 04 SND9832" ID="{EEF7EF2C-3ECF-4CEC-83F3-82DFD3CD7F6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Gore, Flesh, Tearing, Wet, Bones 03 SND9833 1" ID="{308F9661-AB8D-44AD-AB59-5B89A78C66DD}" ShortID="523036963">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Gore, Flesh, Tearing, Wet, Bones 03 SND9833 1" ID="{76BD35A7-549F-46D0-A049-E49E3FF38253}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0684095447744015"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.47847540470945"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.61985796794223"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Gore, Flesh, Tearing, Wet, Bones 03 SND9833 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685205611"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Gore, Flesh, Tearing, Wet, Bones 03 SND9833 1" ID="{76BD35A7-549F-46D0-A049-E49E3FF38253}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="spiderStrike" ID="{99C18BD4-A5E2-44C0-8B87-C47AD3456EFB}" ShortID="926835138">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>2.9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>380</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FD222065-BEDB-4FE1-9214-F329D2C909BE}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{D44B485B-FE21-4404-B73F-427A2744EF7F}" ShortID="1027286509">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{030B29F1-0B8B-463B-9F74-5D888B618129}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.171567765567766"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.296344322344322"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.545897435897436"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.62989377289377"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="845362489"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{030B29F1-0B8B-463B-9F74-5D888B618129}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235_01" ID="{C1F66FEA-D95A-4536-BBC8-FD43581A18A4}" ShortID="911712957">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{A67E5794-4BC8-4659-A77E-ECFACFCE9EF3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.179366300366301"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.272948717948718"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.47213553113553"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.59512454212454"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="434880870"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{A67E5794-4BC8-4659-A77E-ECFACFCE9EF3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235_02" ID="{EFEFF620-C4B2-4BA8-A833-5D29EF81274A}" ShortID="132642580">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{FC253192-E956-4396-AC8B-896D7BB9CD73}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.288545787545788"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.389926739926739"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.21900732600732"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="278533223"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Modulated, Bass Crunch, Fast 01 SND55235" ID="{FC253192-E956-4396-AC8B-896D7BB9CD73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderPrepareStrike" ID="{3D89854E-100C-4DB3-93FD-9A800A62067D}" ShortID="48855413">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="spiderPrepareStrike" ID="{B3F5F891-2937-4BE2-A07C-B86E0B45D701}" ShortID="672397550">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="spiderPrepareStrike" ID="{0DC08547-F192-4E68-B76A-64B1C870D53C}" ShortID="53244746">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{87B24357-51A3-4E3A-A894-2DD66B2D4FDA}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{4A14BD00-B81A-48C4-BD2F-127250B3F550}" ShortID="491440038">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{EA67D0B6-7220-40BC-A578-A2F984D98E02}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.11978021978022"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.203626373626374"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.874395604395605"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.52120879120879"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 03 SND8144.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1026376771"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{EA67D0B6-7220-40BC-A578-A2F984D98E02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144_01" ID="{DE6A10A2-2DC4-4FED-B530-DFF81B00F785}" ShortID="56730896">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{A37EC4D0-C124-4FA5-A184-B49D7D354BFE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0867401576684035"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.114497008122293"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.6889010989011"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39560439560439"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 03 SND8144.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231601375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{A37EC4D0-C124-4FA5-A184-B49D7D354BFE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144_02" ID="{4C776A53-1B06-48FC-8F6D-0BA89F4B7E60}" ShortID="245447812">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{FC615F51-1ED3-4C99-876E-FE16D4D770BE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0838461538461539"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.299450549450549"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.26417582417583"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.03076923076923"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 03 SND8144.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="213176399"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{FC615F51-1ED3-4C99-876E-FE16D4D770BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144_03" ID="{CC03AC9A-BB24-41AE-AA75-A829C1E1808F}" ShortID="43273966">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{7B32483D-46BB-4716-8156-5F386FDA4D1C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.11978021978022"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.17967032967033"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.27648351648352"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.1389010989011"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 03 SND8144.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="7554464"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 03 SND8144" ID="{7B32483D-46BB-4716-8156-5F386FDA4D1C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="spiderPrepareStrikeOrganic" ID="{8321C321-F98A-4BEC-84B4-D190A4E0F428}" ShortID="581371783">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{664893FC-C9E9-4C14-A3E6-1ACD34BE1D06}" ShortID="705475761">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>510</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{60B7CBF4-EF50-455C-A230-53582A52D34B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.170963847528291"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.24935119347597"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.512891542584872"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.34574398287835"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Deep, Movement Slow, Low SND49991.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632383622"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{60B7CBF4-EF50-455C-A230-53582A52D34B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991_01" ID="{92BDF8EB-B66D-43A7-B7F1-3543B691EFCB}" ShortID="3817950">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>510</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{31E27EB3-7428-4F81-AC6D-3B1580303268}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.09781784028955"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.47813625326431"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.22857142857143"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.50588425432022"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Deep, Movement Slow, Low SND49991.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="790198948"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{31E27EB3-7428-4F81-AC6D-3B1580303268}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991_02" ID="{23774F08-0265-4521-9B6E-2FB7F13DCCA2}" ShortID="121062803">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>510</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{1CB6BA34-EE72-4270-AB65-02AFE045A49D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.096318925536667"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.41787578985224"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.59809523809524"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.7919783346303"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Deep, Movement Slow, Low SND49991.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="70440027"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{1CB6BA34-EE72-4270-AB65-02AFE045A49D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991_03" ID="{94AB348F-1BF9-4E42-82DD-E20332529C1C}" ShortID="492718544">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>510</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{48248011-277C-4D4B-B3BB-D8967A14C5BA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.338285714285714"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.44615907131474"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.1500952380952"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.5350756379542"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Swooshes, Whoosh, Deep, Movement Slow, Low SND49991.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="963302859"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Swooshes, Whoosh, Deep, Movement Slow, Low SND49991" ID="{48248011-277C-4D4B-B3BB-D8967A14C5BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderInterestBoy" ID="{352C5333-04EB-47D7-A9FB-DC3B391F2A3E}" ShortID="17488472">
+					<PropertyList>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SpiderInterest" ID="{87041CB2-D2F7-4DBD-A21C-0BBAB91D6555}" ShortID="121108663">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>310</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0D487DB6-E3DD-4622-873D-22C64CA38F24}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-23</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Designed, Eerie, Swell, Thriller, Tension Builders 02 SND45543" ID="{E2437C83-6725-4B50-9FEA-0479F50D0A14}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.04087276785714"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.99001227678571"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.79261421130952"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.5532933407738"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Designed, Eerie, Swell, Thriller, Tension Builders 02 SND45543.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="604909310"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Designed, Eerie, Swell, Thriller, Tension Builders 02 SND45543" ID="{E2437C83-6725-4B50-9FEA-0479F50D0A14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderHitBeartrap" ID="{32B112E7-F70C-4698-976F-B5B645AEB420}" ShortID="239828487">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="spiderHitBeartrap" ID="{A5B9F8B6-BEA3-4522-940A-8FD84274F57C}" ShortID="944958717">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="spiderGore" ID="{4074783A-B87A-4A46-AAC9-BCFE068E688E}" ShortID="318757717">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="gore1" ID="{D4037B3C-6A0A-48E3-B1A3-AEC4A7DA7E1C}" ShortID="391259258">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 05 SND10668" ID="{B0D96632-4CDB-4C33-9E38-D5DA2CF37C39}" ShortID="643854832">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 05 SND10668" ID="{1E6EEB44-984B-42B2-A30B-C22FEB6E742B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.520773823832417"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.18520939217033"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.442957045558608"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.83731945398352"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 05 SND10668.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="609973331"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 05 SND10668" ID="{1E6EEB44-984B-42B2-A30B-C22FEB6E742B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 09 SND10664" ID="{B94234AB-B5D4-4D03-88C8-C5D5DE648C9C}" ShortID="569578198">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 09 SND10664" ID="{5FB021B2-BD4C-41BB-89A4-7AC8902BBDFF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.257215101304945"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.476324261675824"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.40039332932692"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 09 SND10664.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="778933874"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 09 SND10664" ID="{5FB021B2-BD4C-41BB-89A4-7AC8902BBDFF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 11 SND10662" ID="{6B1230D0-4888-4848-B75B-A1A12B61E963}" ShortID="713679364">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 11 SND10662" ID="{D421077C-F1BA-48A9-8E47-0D830E0126F0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.437569597069597"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.782839357257326"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0410221497252747"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.55884168956044"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 11 SND10662.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="371197913"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 11 SND10662" ID="{D421077C-F1BA-48A9-8E47-0D830E0126F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 17 SND10685" ID="{D6802116-4760-47BB-8AFB-ED2794B07A64}" ShortID="140089892">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 17 SND10685" ID="{8FE83FFF-3E9E-425E-BE2A-171B2219536A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.137258542239011"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.344936684409341"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0155161830357143"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.830712568681319"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 17 SND10685.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="138502077"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 17 SND10685" ID="{8FE83FFF-3E9E-425E-BE2A-171B2219536A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="gore2" ID="{BD32F968-DF8C-49E5-A1CF-B62490B1F21D}" ShortID="570066955">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 05 SND10412" ID="{855760DA-7B56-4798-A5B6-CD6A97538C8C}" ShortID="417442951">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 05 SND10412" ID="{8A2C5291-810E-48A7-9200-740C4148F679}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.24753125"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.86496875"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 05 SND10412.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13058686"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 05 SND10412" ID="{8A2C5291-810E-48A7-9200-740C4148F679}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 06 SND10667" ID="{355FAD6F-8684-4ED1-8646-A71032E4B123}" ShortID="1055447589">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 06 SND10667" ID="{4509FE85-3775-4F4A-95F7-72814BE7D1A1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.21146484375"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.05614883814103"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.7584122596154"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 06 SND10667.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="71150522"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 06 SND10667" ID="{4509FE85-3775-4F4A-95F7-72814BE7D1A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 04 SND10413" ID="{BB4A669E-16E5-4632-81D1-045960D0460F}" ShortID="980895820">
+													<PropertyList>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 04 SND10413" ID="{961D0DFC-1F50-4FD2-8313-583F54004D8F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.165449404761905"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.404078353937729"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.976787831959707"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 04 SND10413.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28746993"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Stab, Impact, Vegetables, Slurps With Air, Bloody, Flesh 04 SND10413" ID="{961D0DFC-1F50-4FD2-8313-583F54004D8F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 20 SND10682" ID="{C26BC358-CF2E-48BB-A78C-01092D315929}" ShortID="850865792">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 20 SND10682" ID="{C4756E7D-3FA2-4D6A-9E3B-E87A6AD8E1CB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.569205586080586"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.496096611721612"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.24024152930403"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 20 SND10682.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="346630293"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Gore, Ooze, Squeezing, Blood Spurting, Bloody, Flesh, Guts 20 SND10682" ID="{C4756E7D-3FA2-4D6A-9E3B-E87A6AD8E1CB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="spiderFSBranch" ID="{C482F5BB-9BE3-4ECB-A0E2-096CDE5AB884}" ShortID="1068164344">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{8900E1C6-8B51-47F6-9C49-EB5E21C49A04}" ShortID="246232022">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{3FFF6FBE-BC15-4CC7-A723-D524F7BD4945}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0707142857142857"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.353571428571429"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.361428571428571"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.485"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="232598734"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{3FFF6FBE-BC15-4CC7-A723-D524F7BD4945}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{5FDB05B7-B1CA-4D12-B5DE-041DB2043293}" ShortID="230100573">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{3B7F917B-F5A7-4911-863F-50FEC12E0200}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0146937671703297"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.57468956043956"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.979584478021978"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="632231561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{3B7F917B-F5A7-4911-863F-50FEC12E0200}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_01" ID="{6058F8CA-98E9-4DBA-9813-A1BCFE9C3341}" ShortID="679235394">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{ADEEC830-FC5F-4971-AFD6-14D3479F0D24}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0785714285714285"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.385"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.66571428571429"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.71857142857143"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="623555920"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{ADEEC830-FC5F-4971-AFD6-14D3479F0D24}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_02" ID="{E32E8B34-C474-4309-8E68-91AD57FE3715}" ShortID="1041574720">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{A273DA6D-328F-4DFD-B2A7-49B85413165B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.204285714285715"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.502857142857143"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.89142857142857"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.10928571428572"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="841486046"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{A273DA6D-328F-4DFD-B2A7-49B85413165B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_03" ID="{A2D6C8E9-6D90-465A-9483-D7EED150F941}" ShortID="748676326">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{1D45BC3D-038C-4457-A67D-5AAFB23CB1A8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0392857142857137"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.44"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.53357142857143"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.46857142857143"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="675738047"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{1D45BC3D-038C-4457-A67D-5AAFB23CB1A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="beartrap_broken_spider" ID="{DB5EBB4A-CFB3-4FF4-97A0-66DB36BC63E0}" ShortID="991141425">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-300</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Glass, Crash &amp; Debris, Broken, Movements In Metal Tin 03 SND17580" ID="{FE2A9A4C-9170-45B5-9608-AAB7493407F4}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0129823717948718"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.126578125"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.452760216346154"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.07915965544872"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Glass, Crash &amp; Debris, Broken, Movements In Metal Tin 03 SND17580.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="663706662"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Glass, Crash &amp; Debris, Broken, Movements In Metal Tin 03 SND17580" ID="{FE2A9A4C-9170-45B5-9608-AAB7493407F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderIdle&amp;Escape" ID="{29444395-0338-4494-93EE-2D86DAF37EDF}" ShortID="90439092">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="25-50_lpf_spread50" ID="{DB92D7A1-86F3-4101-9AA9-7A1E5B5A2BBF}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="spiderEscape" ID="{E84BFCB8-7D6C-40A6-9C90-4770F0158717}" ShortID="245741370">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="spiderEscape" ID="{E7E5FC0C-8ACD-4C17-BF04-94CE26C9BB14}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>spiderEscape.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="701913191"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="spiderEscape" ID="{E7E5FC0C-8ACD-4C17-BF04-94CE26C9BB14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="spiderIdle" ID="{56F74882-1A75-41C5-9032-A86A226E0457}" ShortID="856028985">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="spiderIdle" ID="{1C8DE736-228C-4603-A1CD-7654B6C7A975}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.128709819092472"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.749874598190925"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.470070643642072"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.00679262913957"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>spiderIdle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="330265424"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="spiderIdle" ID="{1C8DE736-228C-4603-A1CD-7654B6C7A975}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="spiderFS" ID="{C3BDD3C3-D0C5-4D3D-9AD5-25CBFE6E9535}" ShortID="740951368">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{879DFBF3-1DCC-42FE-BF62-F3485722CFCD}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="spiderFSGround" ID="{A475C65D-D5E2-4A7E-9E1D-C7575916FC3A}" ShortID="310361035">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1" ID="{52982517-CC8C-4002-B591-380A2702143F}" ShortID="494535225">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1" ID="{DC96D244-3D8B-4A83-A308-C5C7BF4E2ED5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0836892961878855"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.836892961878854"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.17381623054407"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82454368588233"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="166948741"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1" ID="{DC96D244-3D8B-4A83-A308-C5C7BF4E2ED5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{494A2F22-5A15-429A-8F9A-C83688800E45}" ShortID="255356827">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{25B5E7C5-B1E9-4B0F-84F1-C1AB18DA87A2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0623397938283849"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.05284985132383"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.332478900418053"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.94205772629799"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="508877255"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{25B5E7C5-B1E9-4B0F-84F1-C1AB18DA87A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769_01" ID="{E4F51608-4276-413C-A754-9BC070B62175}" ShortID="915320716">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{BBB5ABB8-3449-493F-A2A0-752017EC90FF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.175167894014003"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.4843174176976"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.6835383848856"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.62230910195806"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="435752360"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{BBB5ABB8-3449-493F-A2A0-752017EC90FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769_02" ID="{E93BF05C-F5AE-4D20-BB9F-002C6644E7DF}" ShortID="816895133">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{7FE013B8-9632-452A-A628-8F76E3FC48AF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.323088835098789"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.8749757147829"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="14.8940252349245"/>
+												<Property Name="TrimEnd" Type="Real64" Value="17.9170333910123"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="851026848"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{7FE013B8-9632-452A-A628-8F76E3FC48AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769_03" ID="{DDB548F0-D922-4DDA-A559-CACCCB0C50E0}" ShortID="628454107">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{FC51F764-E69C-467F-AEE3-2A11AAA3C633}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.110826300139351"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.907390332390925"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="20.7545229323519"/>
+												<Property Name="TrimEnd" Type="Real64" Value="22.1714623521125"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="309253057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{FC51F764-E69C-467F-AEE3-2A11AAA3C633}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769_04" ID="{4986CCE2-9B6B-48F8-845F-B00B64657374}" ShortID="894624364">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{10A98C33-4AFF-4D6B-8F56-FC83C149D2A4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0343469938448422"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.824327852276163"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="22.5415440567624"/>
+												<Property Name="TrimEnd" Type="Real64" Value="24.572699310794"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="521274117"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Dry Leaves Hit, Rustle Leaf SND7769" ID="{10A98C33-4AFF-4D6B-8F56-FC83C149D2A4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1_01" ID="{C01C3331-D8D2-48A0-9FF4-EB33D97777F6}" ShortID="467451659">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1" ID="{3718C29B-5453-4B78-AE13-E2F46678829A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.236232057005495"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.579919471359162"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="23.8988097670559"/>
+												<Property Name="TrimEnd" Type="Real64" Value="25.1587140710852"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1018724138"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Vegetation, Leaves, Rustle, Moving Leaves With Hand, Intense Attack, Soft Tail, Crackle SND63638 1" ID="{3718C29B-5453-4B78-AE13-E2F46678829A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="spiderFSBranch" ID="{6E4C75C7-32F9-4524-AF61-49788077F374}" ShortID="194105507">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{82779FD4-72D6-4870-9476-990E9682D4AE}" ShortID="103242182">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{A39669ED-6888-4885-B756-34C5C9A99D66}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0707142857142857"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.353571428571429"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.361428571428571"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.485"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="232598734"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{A39669ED-6888-4885-B756-34C5C9A99D66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{8342A8C4-07EC-4709-BEA9-8F5140BDA2DA}" ShortID="1004960490">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{BE5BE14D-F400-4BF2-9EF2-8C388D7E15E6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0146937671703297"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.57468956043956"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.979584478021978"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="632231561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 04 SND8168 2" ID="{BE5BE14D-F400-4BF2-9EF2-8C388D7E15E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_01" ID="{0F413F34-F3AE-4567-B31A-8F3C99AE90C3}" ShortID="857882951">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{2C0D5504-FAB4-47CC-BF3A-86C7F2842FAB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0785714285714285"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.385"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.66571428571429"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.71857142857143"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="623555920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{2C0D5504-FAB4-47CC-BF3A-86C7F2842FAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_02" ID="{6427BCB8-785B-4677-ABC4-B014CC931AA3}" ShortID="340082222">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{6D51F366-18CC-43A8-BEB0-2DD37427D14D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.204285714285715"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.502857142857143"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.89142857142857"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.10928571428572"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="841486046"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{6D51F366-18CC-43A8-BEB0-2DD37427D14D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2_03" ID="{CFC20812-6A4F-4EDA-956E-E32D1E402379}" ShortID="707613658">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{76A2924C-7F70-4EDA-9B11-2CE2FF3A7228}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0392857142857137"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.44"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.53357142857143"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.46857142857143"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="675738047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps, Human, Forest, Twigs, Snap 01 SND8146 2" ID="{76A2924C-7F70-4EDA-9B11-2CE2FF3A7228}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
