@@ -2220,6 +2220,17 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{F4718391-35D7-4672-8B7E-5879FBE6E2A0}" ShortID="164459730">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="boyWakeUpRiserHigh" ID="{812E6588-AA71-4D1C-AE6A-38249169860A}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="env_start_falling_boyGetUpStart" ID="{8B3BF242-19E1-4408-950B-BA08A0DC0FBE}">

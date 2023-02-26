@@ -1096,6 +1096,27 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="lowpass" ID="{7C8799A7-A8BD-4880-AAA7-DCE155E37540}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="lowpass_off" ID="{9F5D14A2-9DE7-40D1-8531-D94FD49597FE}"/>
+														<CustomState Name="" ID="{E6307F6A-85B2-4BF1-AA8E-1C66146FF97A}" ShortID="168322294"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="lowpass_on" ID="{0F6B318A-04F7-4864-BA51-7BAFBD2A1B66}"/>
+														<CustomState Name="" ID="{7396C3BF-8150-46F6-8F48-FFBAC3300B77}" ShortID="414777163">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="57"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</BlendContainer>
 										<BlendContainer Name="amb_start_cave" ID="{EF94BF9D-3399-41D2-AEF3-DB67D9826F96}" ShortID="864317450">
 											<PropertyList>
@@ -1542,6 +1563,352 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</BlendContainer>
+										<BlendContainer Name="amb_start_boat" ID="{C9318DB6-1F9C-4194-A6F3-FC20C79852B7}" ShortID="640151842">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="main_enterboat" ID="{4F67AD5D-59AB-4AB1-90C4-FC3C963AF691}" ShortID="721159549">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>39</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="enterboat_main01" ID="{F858752F-1385-4CE4-B54B-9D674DBD31B4}" ShortID="370085457">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="enterboat_main01" ID="{7C0BEE0B-7F44-4009-B6E3-8AFE64611FE3}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="686.137"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.435097613513491"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.761420823648608"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="28.4626355506742"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>enterboat_main01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="238506338"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="enterboat_main01" ID="{7C0BEE0B-7F44-4009-B6E3-8AFE64611FE3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="enterboat_main02" ID="{2078209A-FA9A-4369-BA24-F5B948907C5F}" ShortID="418702282">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="enterboat_main02" ID="{EA3A3A08-7EFC-4508-A38E-F9817A88EF8A}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="466.955"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.412436463947281"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.888324691578759"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="24.7461878368369"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>enterboat_main02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="560587917"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="enterboat_main02" ID="{EA3A3A08-7EFC-4508-A38E-F9817A88EF8A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="enterboat_main03" ID="{F0FFF528-2804-4262-97D4-B3F537435C52}" ShortID="762928701">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="enterboat_main03" ID="{D322F769-8031-4212-80E6-5E8BA42B23B9}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="533.662"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.471355747972948"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="1.05148589932427"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="28.2813448783769"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>enterboat_main03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="397677094"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="enterboat_main03" ID="{D322F769-8031-4212-80E6-5E8BA42B23B9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="enterboat_main04" ID="{02E5B71D-B6A9-41CC-9DBD-CD6592279743}" ShortID="805029163">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="enterboat_main04" ID="{F5C8D528-F161-4C0C-90EA-1A0EC1337906}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="686.137"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.580130151351321"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="1.1965184371621"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="28.2813448783769"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>enterboat_main04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="960971491"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="enterboat_main04" ID="{F5C8D528-F161-4C0C-90EA-1A0EC1337906}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<BlendContainer Name="Music" ID="{857E32C9-9268-4DA8-90B7-8DB89B312CB6}" ShortID="259176848">
+													<PropertyList>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-31</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="music_violin_02" ID="{8F704600-5573-4D9F-82D8-5152856ADC51}" ShortID="312736400">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="music_violin_02" ID="{E47E50AA-94A0-4E3E-AF95-E317FD4B2214}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.437267080745342"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>music_violin_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="657227740"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="music_violin_02" ID="{E47E50AA-94A0-4E3E-AF95-E317FD4B2214}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="music_atmo" ID="{F43C6521-C18D-45E6-A09F-988370B28AE7}" ShortID="56434172">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="music_atmo" ID="{A77BE38D-2304-49B7-9DB5-DC93DAB2C9A7}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.636024844720495"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="25.4409937888199"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>music_atmo.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="566391415"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="music_atmo" ID="{A77BE38D-2304-49B7-9DB5-DC93DAB2C9A7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</BlendContainer>
+												<Sound Name="boat_mainrumble" ID="{02B2D1F8-1438-472A-804D-E362E3125D5E}" ShortID="1067673967">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="boat_mainrumble" ID="{82317048-8BC2-4739-9A72-A78228696928}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="420.251"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.3636954690779"/>
+																<Property Name="LoopBegin" Type="Real64" Value="2.41361538569879"/>
+																<Property Name="LoopEnd" Type="Real64" Value="20.4330727172857"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.0910864072337"/>
+																<Property Name="TrimEnd" Type="Real64" Value="21.2265901043647"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>boat_mainrumble.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="239322520"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="boat_mainrumble" ID="{82317048-8BC2-4739-9A72-A78228696928}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -1554,6 +1921,11 @@
 															<Value>2.5</Value>
 														</ValueList>
 													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1.5</Value>
+														</ValueList>
+													</Property>
 													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
 												</PropertyList>
 											</GroupingBehavior>
@@ -1564,6 +1936,11 @@
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1.5</Value>
 														</ValueList>
 													</Property>
 													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
@@ -1581,12 +1958,41 @@
 													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
 												</PropertyList>
 											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="amb_start_boat" ID="{C9318DB6-1F9C-4194-A6F3-FC20C79852B7}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>2</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
 												<SwitchRef Name="amb_sws_start_falling_eyesopen" ID="{759C7122-8F3C-48F3-BCBC-806E2DD588A3}"/>
 												<ItemList>
 													<ItemRef Name="amb_start_eyesopen" ID="{19414CA5-2ABE-4229-8976-A75560995AD7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="amb_sws_start_falling_enterboat" ID="{6AEA1135-BD7C-42FE-BE86-4C6CF5497B34}"/>
+												<ItemList>
+													<ItemRef Name="amb_start_boat" ID="{C9318DB6-1F9C-4194-A6F3-FC20C79852B7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="amb_sws_start_falling_boatexitwater" ID="{B49E3840-5ACE-4296-AFBC-A87AA0DBD3EA}"/>
+												<ItemList>
+													<ItemRef Name="amb_start_boat" ID="{C9318DB6-1F9C-4194-A6F3-FC20C79852B7}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>

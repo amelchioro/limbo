@@ -230,11 +230,6 @@
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -298,6 +293,46 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="boyWakeUpRiserRumble" ID="{7566B8B6-0FC1-4A52-BC13-112464E1288E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boyWakeUpRiserHigh" ID="{812E6588-AA71-4D1C-AE6A-38249169860A}" ShortID="77911780">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="riser intro" ID="{E8A2DF5C-0535-4D46-A7E6-E651FB0A2AD2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.56232158111472"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.929482459650526"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.20973387936735"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.4418455041591"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>riser intro.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="310298722"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="riser intro" ID="{E8A2DF5C-0535-4D46-A7E6-E651FB0A2AD2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -18179,32 +18214,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<BlendContainer Name="boyWaterLandSystem" ID="{3A484E69-E925-4F88-9AC4-D26DDC99DB2E}" ShortID="983465925">
-							<PropertyList>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackList>
-								<BlendTrack Name="submerged" ID="{E788A075-C8C3-4191-B88F-17FD3636B4D8}" ShortID="779438409">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="RTPC_SUBMERGED" ID="{32525AF0-9BF9-4BAF-99A8-DA53164751F4}" WorkUnitID="{2105C246-86CC-4AC0-9384-8116FE5072C1}"/>
-										</Reference>
-									</ReferenceList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
 						<ActorMixer Name="boyImpacts" ID="{64BEC9DA-00DE-44CC-8BCF-FF06D73D3EE1}" ShortID="415463184">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -18231,8 +18240,8 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="footImpact" ID="{31A63F8A-17E6-4181-A852-E5DE2336EB9C}" ShortID="169954142">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -18246,6 +18255,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -18254,6 +18264,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
 										</Reference>
@@ -18343,146 +18356,13 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="pelvisImpact" ID="{99AB9EB6-BC98-46E9-915A-C139D983C558}" ShortID="114510489">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="OverrideConversion" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>530</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{E9FE626D-002D-48BE-AD12-A1190DAB7745}">
-														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="200"/>
-															<Property Name="Min" Type="Real64" Value="-200"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{DD8DAFAA-9642-4FBB-B2F9-DB6EFEF47841}" ShortID="1007512105">
-											<PropertyList>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{25F0551A-B3C1-4688-85D8-8115BA2892E5}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0147886618589743"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.163731613438645"/>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.440490856799451"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.765841417696887"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 04 SND8305.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="373979198"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{25F0551A-B3C1-4688-85D8-8115BA2892E5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{900431B9-8A91-4334-84CC-EC7E75EFB341}" ShortID="1043076366">
-											<PropertyList>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{BE1B4413-FA65-4D57-BAA6-A5C48DB154F0}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0171049107142858"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.152518787202381"/>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.668516927083333"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 10 SND8299.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="795372591"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{BE1B4413-FA65-4D57-BAA6-A5C48DB154F0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{CACB31AC-F356-425F-A062-77242B2CAB8A}" ShortID="1000056804">
-											<PropertyList>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{0AA1908A-BD43-4B7E-B544-ECC49902553E}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0212351476648352"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0487621909340659"/>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.00865135645604396"/>
-														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 02 SND8307.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="283259347"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{0AA1908A-BD43-4B7E-B544-ECC49902553E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{E91D3662-71B3-4FD1-9E18-9E7B6B5A5D23}"/>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="torsoImpact" ID="{50553250-10A5-462D-8A3B-12706F601393}" ShortID="1049586293">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -18497,9 +18377,13 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
 										</Reference>
@@ -18614,6 +18498,154 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{753C3DE6-1794-42C9-B2A1-3FCE890DB045}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="pelvisImpact" ID="{99AB9EB6-BC98-46E9-915A-C139D983C558}" ShortID="114510489">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>530</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E9FE626D-002D-48BE-AD12-A1190DAB7745}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="11-25_lpf" ID="{CD08B3C2-18FE-4B33-A3B2-01A241E25016}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="MONO" ID="{2FB36BCF-7439-46EC-8E33-5927A0EAC2E7}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{DD8DAFAA-9642-4FBB-B2F9-DB6EFEF47841}" ShortID="1007512105">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{25F0551A-B3C1-4688-85D8-8115BA2892E5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0147886618589743"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.163731613438645"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.440490856799451"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.765841417696887"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 04 SND8305.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="373979198"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 04 SND8305" ID="{25F0551A-B3C1-4688-85D8-8115BA2892E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{900431B9-8A91-4334-84CC-EC7E75EFB341}" ShortID="1043076366">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{BE1B4413-FA65-4D57-BAA6-A5C48DB154F0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0171049107142858"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.152518787202381"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.668516927083333"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 10 SND8299.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="795372591"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 10 SND8299" ID="{BE1B4413-FA65-4D57-BAA6-A5C48DB154F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{CACB31AC-F356-425F-A062-77242B2CAB8A}" ShortID="1000056804">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{0AA1908A-BD43-4B7E-B544-ECC49902553E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0212351476648352"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0487621909340659"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00865135645604396"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Fight, Bodyfall, Impact, Gym Mat 02 SND8307.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="283259347"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fight, Bodyfall, Impact, Gym Mat 02 SND8307" ID="{0AA1908A-BD43-4B7E-B544-ECC49902553E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{AAA3C452-034D-41CD-A502-0FC94507F3AF}"/>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>

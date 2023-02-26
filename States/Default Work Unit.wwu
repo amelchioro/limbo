@@ -407,11 +407,28 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 				</Folder>
 				<Folder Name="Migrated Arguments" ID="{73CE4F53-AE36-45D8-AED3-A21D27E08FA1}" ShortID="775020163"/>
 				<StateGroup Name="lowpass" ID="{7C8799A7-A8BD-4880-AAA7-DCE155E37540}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{46DFE08E-96B4-4E7E-93A9-34476525C6F8}"/>
 						<State Name="lowpass_on" ID="{0F6B318A-04F7-4864-BA51-7BAFBD2A1B66}"/>
 						<State Name="lowpass_off" ID="{9F5D14A2-9DE7-40D1-8531-D94FD49597FE}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="lowpass_on" ID="{0F6B318A-04F7-4864-BA51-7BAFBD2A1B66}"/>
+							<EndState Name="lowpass_off" ID="{9F5D14A2-9DE7-40D1-8531-D94FD49597FE}"/>
+							<Time>1.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="lowpass_off" ID="{9F5D14A2-9DE7-40D1-8531-D94FD49597FE}"/>
+							<EndState Name="lowpass_on" ID="{0F6B318A-04F7-4864-BA51-7BAFBD2A1B66}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
