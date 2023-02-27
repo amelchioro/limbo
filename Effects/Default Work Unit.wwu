@@ -8,7 +8,8 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 				<Effect Name="halfsec" ID="{14EE0559-8077-48D0-A384-0C715DB585B3}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 					<PropertyList>
 						<Property Name="DelayTime" Type="Real32" Value="1"/>
-						<Property Name="Feedback" Type="Real32" Value="73"/>
+						<Property Name="Feedback" Type="Real32" Value="40.5"/>
+						<Property Name="FeedbackEnabled" Type="bool" Value="True"/>
 						<Property Name="ProcessLFE" Type="bool" Value="False"/>
 						<Property Name="WetDryMix" Type="Real32" Value="100"/>
 					</PropertyList>

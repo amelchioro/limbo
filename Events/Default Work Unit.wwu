@@ -2194,7 +2194,7 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="boyEyesOpen" ID="{2A6BA58F-E4BE-4D92-A563-90F55340E62C}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
+													<ObjectRef Name="boyEyes" ID="{991CA53C-F2C3-4281-9795-D2540B5A7979}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -2231,6 +2231,17 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{6B803B71-40D9-4EE3-971C-359C7887713C}" ShortID="256802013">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="girl screaming" ID="{CB4314BB-A14E-4319-8B61-2841B44D11E3}" WorkUnitID="{9E8205D4-98AE-4DF5-8773-EB19CC9B3835}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="env_start_falling_boyGetUpStart" ID="{8B3BF242-19E1-4408-950B-BA08A0DC0FBE}">
@@ -2257,6 +2268,16 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="boyWakeUp" ID="{5687E118-8B49-4031-9BF3-2CA500FDC6B7}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A4921F3A-E724-4A44-A0D0-7E5E2FABBBF0}" ShortID="865467751">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="boyHeartbeat" ID="{5D6CAA59-4F5B-44E7-9042-F68DA63764A2}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -7916,8 +7937,35 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 														</Action>
 													</ChildrenList>
 												</Event>
-												<Event Name="amb_start_falling_bird" ID="{6A553FD2-1105-4764-9A3D-064CF8EF9344}"/>
-												<Event Name="amb_start_falling_bird_stop" ID="{090FA37E-4C7F-4862-A9D2-AC8D7E2DDCDA}"/>
+												<Event Name="amb_start_falling_bird" ID="{6A553FD2-1105-4764-9A3D-064CF8EF9344}">
+													<ChildrenList>
+														<Action Name="" ID="{6F067B73-83F5-4516-9D30-B88ED552DC05}" ShortID="604567849">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="1"/>
+																<Property Name="Delay" Type="Real64" Value="3"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="girl screaming_01" ID="{F9038BF9-5004-43C3-9A5F-2D8961B9AE78}" WorkUnitID="{9E8205D4-98AE-4DF5-8773-EB19CC9B3835}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="amb_start_falling_bird_stop" ID="{090FA37E-4C7F-4862-A9D2-AC8D7E2DDCDA}">
+													<ChildrenList>
+														<Action Name="" ID="{119F72E2-981E-4F0C-8164-F2F6D4703B0A}" ShortID="657530231">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Voices, Scream, Pained Scream Male, Scream SND63772" ID="{3D50A77B-EE7B-47A8-926D-91A00BFBDA62}" WorkUnitID="{9E8205D4-98AE-4DF5-8773-EB19CC9B3835}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
 											</ChildrenList>
 										</Folder>
 										<Folder Name="beartrap" ID="{EEB5CE05-6C5B-43EB-A5BA-B1B3B9E5ECB0}" ShortID="863703885">

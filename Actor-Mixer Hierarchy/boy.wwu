@@ -40,53 +40,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="boyEyesOpen" ID="{2A6BA58F-E4BE-4D92-A563-90F55340E62C}" ShortID="170395566">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="boyEyesOpen_updated" ID="{2D825705-4DE8-4066-B724-F2D4B2F37DAA}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0119877627978915"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="10.0579237780437"/>
-												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.268222439018681"/>
-												<Property Name="TrimEnd" Type="Real64" Value="30.5892744910272"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>boyEyesOpen_updated.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="434261998"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="boyEyesOpen_updated" ID="{2D825705-4DE8-4066-B724-F2D4B2F37DAA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="boyPullSelfUp" ID="{A376C53C-8385-40B5-9127-FD6B28BF5EA6}" ShortID="639832891">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -230,6 +190,11 @@
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -264,6 +229,11 @@
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -301,7 +271,7 @@
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -333,6 +303,46 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="riser intro" ID="{E8A2DF5C-0535-4D46-A7E6-E651FB0A2AD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boyEyes" ID="{991CA53C-F2C3-4281-9795-D2540B5A7979}" ShortID="971880424">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boyEyes" ID="{8698AD62-19DC-4063-9CB3-31A288EB5944}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0298136645962733"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.15900621118012"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.432298136645963"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>boyEyes.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="591452293"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boyEyes" ID="{8698AD62-19DC-4063-9CB3-31A288EB5944}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
