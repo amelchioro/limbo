@@ -1100,6 +1100,504 @@
 														<ActiveSource Name="amb_main_forest_updated" ID="{7383A20B-AD83-41EC-A961-A6275EBA89DF}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<RandomSequenceContainer Name="eyesopen_drone" ID="{8F6D96CC-5256-4303-A30B-6E585A893D05}" ShortID="291707855">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{35DA0CA8-E74B-4D6A-A060-9847A72CAFBC}">
+																		<PropertyList>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="oceanic drone" ID="{752AD832-6ADF-4606-8BFB-D027BDA0A565}" ShortID="764526274">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="oceanic drone" ID="{1C6CA9F7-D433-4947-9028-B6EF2081B554}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.39854075294714"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.24314733595302"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.725169279305925"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="10.67034796693"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>oceanic drone.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="23525261"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="oceanic drone" ID="{1C6CA9F7-D433-4947-9028-B6EF2081B554}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="oceanic drone_01" ID="{415C4183-9EF9-40B0-9E05-96EA3FE21F0E}" ShortID="751711468">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="oceanic drone" ID="{A1E9C6AD-9134-4936-9F1C-3B5C65792928}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.19134953028831"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.45033855861185"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="11.9652931085478"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="22.3248542414895"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>oceanic drone.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="79995376"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="oceanic drone" ID="{A1E9C6AD-9134-4936-9F1C-3B5C65792928}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="oceanic drone_02" ID="{D4696F6C-4D50-4749-9F5C-F62414115C8F}" ShortID="393889328">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="oceanic drone" ID="{307B6AA4-75A5-4E64-932C-09A162F6AB15}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.1395517246236"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="4.55820689849439"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="32.1664373177843"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="41.3346489204377"/>
+																		<Property Name="VolumeOffset" Type="Real64">
+																			<ValueList>
+																				<Value>3.7</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>oceanic drone.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="351735151"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="oceanic drone" ID="{307B6AA4-75A5-4E64-932C-09A162F6AB15}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="eyesopen_wood" ID="{894E2047-BD4D-432B-B214-E6323A6E6DD9}" ShortID="465862645">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>26</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{EF1D8AC7-D6B5-4DDF-B6EB-71F8B3D61E15}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{22DCCEA4-1228-48F5-BA4E-CADF82B050FF}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-14</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F36016F0-7AD9-43B1-BF6E-6C4C0170C83D}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-4"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="wood 02" ID="{56824DDA-5FD1-4D24-A08F-9B64C2E79677}" ShortID="558784739">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="wood 02" ID="{97F86987-AAF6-44C6-A836-EB12B33BADDA}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.904289382506919"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.1454332178421"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.83344006518835"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="8.96334951668595"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>wood 02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="303348623"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="wood 02" ID="{97F86987-AAF6-44C6-A836-EB12B33BADDA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="wood 02_01" ID="{B02D65EA-6741-40BC-BE93-1AD6E005333A}" ShortID="23624468">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="wood 02" ID="{DE356F5B-FDB0-4A3D-A875-DF8455438203}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.926779059449867"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2.64794016985676"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="8.64993788819876"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="20.0360806185828"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>wood 02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="133755428"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="wood 02" ID="{DE356F5B-FDB0-4A3D-A875-DF8455438203}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="wood 02_02" ID="{FBEA81E3-2400-416F-89E6-B4F1A24B2A4D}" ShortID="791040038">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="wood 02" ID="{499E2E34-D107-447D-ADEA-C567DE22417D}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.573720370135632"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.32397008492838"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="27.8475041196603"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="33.805369501838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>wood 02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="225722085"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="wood 02" ID="{499E2E34-D107-447D-ADEA-C567DE22417D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{94407E77-E524-4E24-B78D-764D00E55917}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="eyesopen_wood_Path" ID="{B5EB131C-4C26-4182-A75C-228143955BE3}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="3"/>
+																		<Property Name="RandomY" Type="Real64" Value="4"/>
+																		<Property Name="RandomZ" Type="Real64" Value="7"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-30.45685</XPos>
+																			<YPos>33.61582</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.5939086294416</XPos>
+																			<YPos>23.1638418079096</YPos>
+																			<Flags>0</Flags>
+																			<Time>2500</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-44.16244</XPos>
+																			<YPos>10.16949</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="eyesopen_wood_Path_01" ID="{456BF240-9585-4737-A1C6-BB2B6C2BA4F1}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="4"/>
+																		<Property Name="RandomY" Type="Real64" Value="4"/>
+																		<Property Name="RandomZ" Type="Real64" Value="4"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>12.18274</XPos>
+																			<YPos>30.79096</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>20.8121827411168</XPos>
+																			<YPos>25.9887005649718</YPos>
+																			<Flags>0</Flags>
+																			<Time>2500</Time>
+																		</Point>
+																		<Point>
+																			<XPos>28.4263959390863</XPos>
+																			<YPos>22.0338983050847</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="eyesopen_wood_Path_02" ID="{57DD74DC-920D-482F-A289-65CC753F6528}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="3"/>
+																		<Property Name="RandomY" Type="Real64" Value="3"/>
+																		<Property Name="RandomZ" Type="Real64" Value="6"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-59.39086</XPos>
+																			<YPos>27.9661</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-68.0203045685279</XPos>
+																			<YPos>21.4689265536723</YPos>
+																			<Flags>0</Flags>
+																			<Time>2500</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-80.7106598984772</XPos>
+																			<YPos>11.2994350282486</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="eyesopen_wood_Path_03" ID="{684FC38C-B36A-43DB-B254-09E100491301}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="2"/>
+																		<Property Name="RandomY" Type="Real64" Value="2"/>
+																		<Property Name="RandomZ" Type="Real64" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-0</XPos>
+																			<YPos>11.58192</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>11.67513</XPos>
+																			<YPos>14.12429</YPos>
+																			<Flags>0</Flags>
+																			<Time>2500</Time>
+																		</Point>
+																		<Point>
+																			<XPos>26.90355</XPos>
+																			<YPos>9.60452</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="eyesopen_wood_Path_04" ID="{3787989C-5AE8-4BD3-855E-D8ED09EC5762}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="2"/>
+																		<Property Name="RandomY" Type="Real64" Value="5"/>
+																		<Property Name="RandomZ" Type="Real64" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>5.58376</XPos>
+																			<YPos>46.0452</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>10.1522842639594</XPos>
+																			<YPos>38.9830508474576</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
@@ -1116,7 +1614,7 @@
 														<StateRef Name="lowpass_on" ID="{0F6B318A-04F7-4864-BA51-7BAFBD2A1B66}"/>
 														<CustomState Name="" ID="{7396C3BF-8150-46F6-8F48-FFBAC3300B77}" ShortID="414777163">
 															<PropertyList>
-																<Property Name="Lowpass" Type="int16" Value="57"/>
+																<Property Name="Lowpass" Type="int16" Value="39"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -1558,7 +2056,7 @@
 														</Sound>
 													</ChildrenList>
 												</BlendContainer>
-												<Sound Name="boat_mainrumble" ID="{02B2D1F8-1438-472A-804D-E362E3125D5E}" ShortID="1067673967">
+												<Sound Name="enterboat_mainrumble" ID="{02B2D1F8-1438-472A-804D-E362E3125D5E}" ShortID="1067673967">
 													<PropertyList>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
@@ -2334,6 +2832,27 @@
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="menu" ID="{D7A33487-ED78-46DC-BE3A-3670707B0846}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="inGame" ID="{6989DA60-BD41-47A9-BB5C-8FCAFE1C7367}"/>
+								<CustomState Name="" ID="{FC6C55A4-8BC9-448F-96F9-2E112C399872}" ShortID="96762021"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="menu" ID="{1C180493-C2D9-4BFE-8121-AAA4BEF2F259}"/>
+								<CustomState Name="" ID="{BDB2D770-AA1D-4145-8B04-3BFBD0683F54}" ShortID="1001187081">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="74"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="amb_bird" ID="{02135195-6D13-4E62-AD1A-3A6FCAC6DD8C}" ShortID="340970285">
 					<PropertyList>

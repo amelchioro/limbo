@@ -59,7 +59,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Cloth, Movement, Jacket, Thick, Rapid Actions, Slow Walk SND50901 1" ID="{37CB22A9-278B-4C0E-812E-E8B4BF73E2FD}">
+										<AudioFileSource Name="cloth move" ID="{37CB22A9-278B-4C0E-812E-E8B4BF73E2FD}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.071256390814558"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.482074882376794"/>
@@ -77,12 +77,13 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Cloth, Movement, Jacket, Thick, Rapid Actions, Slow Walk SND50901 1" ID="{37CB22A9-278B-4C0E-812E-E8B4BF73E2FD}" Platform="Linked"/>
+										<ActiveSource Name="cloth move" ID="{37CB22A9-278B-4C0E-812E-E8B4BF73E2FD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="boyWakeUp" ID="{5687E118-8B49-4031-9BF3-2CA500FDC6B7}" ShortID="736065052">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -93,6 +94,9 @@
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="Echo" ID="{795D3C01-0198-4685-B15D-88C67B16FF0C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
@@ -305,7 +309,52 @@
 										<ActiveSource Name="riser intro" ID="{E8A2DF5C-0535-4D46-A7E6-E651FB0A2AD2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="boyEyes" ID="{991CA53C-F2C3-4281-9795-D2540B5A7979}" ShortID="971880424">
+								<Sound Name="boyEyes" ID="{35D568B0-90FE-4D29-83A1-43C5BAFEBE47}" ShortID="970046511">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="12-20_spread50" ID="{9B7F30F4-C0A8-44FD-AC20-3DD742F153FC}" WorkUnitID="{62934378-293B-40F0-A140-67896FE2A956}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F39C081D-D481-4209-B247-79EFCBC2413D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54DAFE7E-3697-4275-9F6C-BDA438FB9BFF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="oceanic drone" ID="{6EBFA61F-BED5-42E5-B406-C763FF21571E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.880562696300051"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.98714630700703"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.34674294728243"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.24070664969314"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>oceanic drone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="365662774"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="oceanic drone" ID="{6EBFA61F-BED5-42E5-B406-C763FF21571E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boyUp" ID="{622ED3BF-25AF-4653-9B26-D600120F7DF8}" ShortID="12558554">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
@@ -324,25 +373,25 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="boyEyes" ID="{8698AD62-19DC-4063-9CB3-31A288EB5944}">
+										<AudioFileSource Name="boyUp" ID="{716BE73D-A621-4051-8021-27C4DEC235AD}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0298136645962733"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="4.15900621118012"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0990311594202897"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.222820108695652"/>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.432298136645963"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.193693297101449"/>
 												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>boyEyes.wav</AudioFile>
+											<AudioFile>Cloth, Movement, Leather Jacket, Zipper Details SND50985.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="591452293"/>
+												<MediaID ID="123348955"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="boyEyes" ID="{8698AD62-19DC-4063-9CB3-31A288EB5944}" Platform="Linked"/>
+										<ActiveSource Name="boyUp" ID="{716BE73D-A621-4051-8021-27C4DEC235AD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

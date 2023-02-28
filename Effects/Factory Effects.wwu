@@ -21,10 +21,9 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 					<ChildrenList>
 						<Effect Name="Echo" ID="{795D3C01-0198-4685-B15D-88C67B16FF0C}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="1"/>
 								<Property Name="Feedback" Type="Real32" Value="33"/>
 								<Property Name="FeedbackEnabled" Type="bool" Value="True"/>
-								<Property Name="WetDryMix" Type="Real32" Value="16.5"/>
+								<Property Name="WetDryMix" Type="Real32" Value="13.5"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="The_Slap" ID="{83E0619D-B89C-4190-9D6E-A353DE39D1E4}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">

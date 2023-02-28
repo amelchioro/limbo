@@ -2194,7 +2194,7 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="boyEyes" ID="{991CA53C-F2C3-4281-9795-D2540B5A7979}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
+													<ObjectRef Name="boyEyes" ID="{35D568B0-90FE-4D29-83A1-43C5BAFEBE47}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -2302,7 +2302,7 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="getUp" ID="{BA610AE6-0EDB-4111-8940-96DE57F02E6A}" WorkUnitID="{670B9AC0-15C4-4823-AF0D-CDDF68AFC02C}"/>
+													<ObjectRef Name="boyUp" ID="{622ED3BF-25AF-4653-9B26-D600120F7DF8}" WorkUnitID="{1B344D30-1439-425E-A6D3-D2CBE42C33D8}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

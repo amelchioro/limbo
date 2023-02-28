@@ -285,9 +285,6 @@ COPYRIGHT MMX BY PLAYDEAD ApS </Comment>
 				<Folder Name="menu" ID="{322767F5-5FB5-41CB-9943-02A2138D50BF}" ShortID="785787681">
 					<ChildrenList>
 						<StateGroup Name="menu" ID="{D7A33487-ED78-46DC-BE3A-3670707B0846}">
-							<PropertyList>
-								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.25"/>
-							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{D553BFEA-A8B1-405D-BFA7-C33CB868BE56}"/>
 								<State Name="inGame" ID="{6989DA60-BD41-47A9-BB5C-8FCAFE1C7367}"/>
